@@ -39,18 +39,18 @@ export default function ContactForm() {
     <div className="corner-brackets glass rounded-2xl p-6 sm:p-8 relative">
       <CornerBrackets corners={["tl", "br"]} />
 
-      <div className="flex items-start justify-between mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-6">
         <div>
           <div className="font-mono text-[10px] tracking-[0.2em] text-falcon-green/80 mb-2">
             // SUPPORT REQUEST
           </div>
           <h3 className="font-heading font-bold text-xl text-white">Contact Support</h3>
         </div>
-        <div className="text-right shrink-0">
+        <div className="sm:text-right shrink-0">
           <div className="font-mono text-[10px] tracking-[0.15em] text-gray-500">
             TICKET_ID: SUP-001
           </div>
-          <div className="flex items-center justify-end gap-1.5 mt-1">
+          <div className="flex items-center sm:justify-end gap-1.5 mt-1">
             <span className="w-1.5 h-1.5 rounded-full bg-falcon-green" />
             <span className="font-mono text-[10px] tracking-[0.15em] text-falcon-green/80">
               SECURE
@@ -113,9 +113,10 @@ export default function ContactForm() {
 
           <div className="flex flex-col gap-2">
             <label className="font-mono text-[10px] tracking-[0.2em] text-gray-400">
-              DISCORD TAG
+              DISCORD TAG<span className="text-falcon-green">*</span>
             </label>
             <input
+              required
               type="text"
               name="discord"
               value={form.discord}

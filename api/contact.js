@@ -16,8 +16,8 @@ export default async function handler(req, res) {
 
   const { name, email, discord, message } = req.body ?? {};
 
-  if (!name || !email) {
-    return res.status(400).json({ error: "Name and email are required" });
+  if (!name || !email || !discord) {
+    return res.status(400).json({ error: "Name, email, and Discord tag are required" });
   }
 
   const embed = {

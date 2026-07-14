@@ -99,16 +99,13 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="flex flex-wrap items-stretch gap-x-8 gap-y-4">
-            {stats.map((stat, i) => (
-              <div
-                key={stat.label}
-                className={`flex flex-col ${i > 0 ? "pl-8 border-l border-white/10" : ""}`}
-              >
-                <span className="font-display text-2xl sm:text-3xl text-falcon-green text-glow">
+          <div className="grid grid-cols-3 divide-x divide-white/10">
+            {stats.map((stat) => (
+              <div key={stat.label} className="flex flex-col px-3 first:pl-0">
+                <span className="font-display text-xl sm:text-3xl text-falcon-green text-glow">
                   <CountUp end={stat.value} decimals={stat.decimals} suffix={stat.suffix} />
                 </span>
-                <span className="font-mono text-[11px] tracking-[0.15em] text-gray-400 mt-1">
+                <span className="font-mono text-[9px] sm:text-[11px] tracking-widest sm:tracking-[0.15em] text-gray-400 mt-1">
                   {stat.label.toUpperCase()}
                 </span>
               </div>

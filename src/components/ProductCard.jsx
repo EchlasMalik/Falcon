@@ -8,7 +8,7 @@ export default function ProductCard({ product }) {
       href={product.href}
       target="_blank"
       rel="noopener noreferrer"
-      className="corner-brackets group relative w-72 h-29 rounded-xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-falcon-green/70 hover:glow-green-strong"
+      className="corner-brackets group relative w-full aspect-1606/646 rounded-xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-falcon-green/70 hover:glow-green-strong"
     >
       <span className="corner-bracket tl opacity-0 group-hover:opacity-100 transition-opacity" />
       <span className="corner-bracket tr opacity-0 group-hover:opacity-100 transition-opacity" />

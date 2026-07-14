@@ -18,15 +18,10 @@ export default function ProductCatalogue() {
           </p>
         </div>
 
-        <div className="overflow-x-auto pb-2">
-          <div
-            className="grid grid-cols-4 gap-4 sm:gap-5 mx-auto"
-            style={{ width: "max-content" }}
-          >
-            {products.map((p) => (
-              <ProductCard key={p.name} product={p} />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          {products.map((p) => (
+            <ProductCard key={p.name} product={p} />
+          ))}
         </div>
       </div>
     </section>
