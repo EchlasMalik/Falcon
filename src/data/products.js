@@ -125,6 +125,15 @@ export const products = [
     to: "#0a0f07",
   },
   {
+    name: "Rocket League",
+    tag: "Car Soccer",
+    code: "RL",
+    image: "/products/Rocket-League.png",
+    href: DISCORD_URL,
+    from: "#1c2618",
+    to: "#0a0f07",
+  },
+  {
     name: "HWID Spoofer",
     tag: "Utility",
     code: "HWID",
