@@ -35,6 +35,15 @@ export const products = [
     to: "#0a070c",
   },
   {
+    name: "Meccha Chameleon",
+    tag: "Party Game",
+    code: "MC",
+    image: "/products/meccha-chameleon.png",
+    href: DISCORD_URL,
+    from: "#1c1420",
+    to: "#0a070c",
+  },
+  {
     name: "Apex Legends",
     tag: "Battle Royale",
     code: "APX",
