@@ -38,7 +38,7 @@ export const products = [
     name: "Meccha Chameleon",
     tag: "Party Game",
     code: "MC",
-    image: "/products/meccha-chameleon.png",
+    image: "/products/Mechha-Chameleon.jpg",
     href: DISCORD_URL,
     from: "#1c1420",
     to: "#0a070c",
